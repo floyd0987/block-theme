@@ -25,6 +25,7 @@ The theme.json file includes a color palette with a very small selection of colo
 
 - Background
 - Foreground
+
 - Primary
 - Secondary
 
