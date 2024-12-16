@@ -26,4 +26,5 @@ require_once get_template_directory() . '/inc/enqueue-blocks.php';
 
 require_once get_template_directory() . '/inc/disable-emojis.php';
 
+require_once get_template_directory() . '/inc/cpt-ui.php';
 
