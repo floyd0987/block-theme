@@ -1,2 +1,10 @@
 body {
+	&.admin-bar header {
+		top: 32px;
+	}
+}
+
+main,
+.woocommerce div.product {
+	margin-top: 9em;
 }

@@ -7,7 +7,6 @@
  * Categories: featured
  * Keywords:
  * Block Types: core/group
- * Inserter: yes
  *
  * @package BlockTheme
  */
@@ -15,106 +14,171 @@
 ?>
 
 
-<!-- wp:group {"metadata":{"name":"Hero"},"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}},"position":{"type":""}},"backgroundColor":"black","layout":{"type":"default"}} -->
+
+<!-- wp:group {"lock":{"move":true,"remove":true},"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|80"}}},"backgroundColor":"zeever-bgsoft","layout":{"contentSize":"1170px","type":"constrained"}} -->
 <div
-  class="wp-block-group has-black-background-color has-background"
-  style="
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-  "
+	class="wp-block-group has-zeever-bgsoft-background-color has-background"
+	style="padding-bottom: var( --wp--preset--spacing--80 )"
 >
-  <!-- wp:cover {"url":"http://archimedestrutturemetalliche.local/wp-content/uploads/2024/12/239341950_4094064100692569_7433970468122201346_n.jpg","hasParallax":true,"dimRatio":0,"customOverlayColor":"#636662","isUserOverlayColor":false,"minHeight":563,"contentPosition":"center center","style":{"spacing":{"padding":{"bottom":"180px"}}},"layout":{"type":"default"}} -->
-  <div
-    class="wp-block-cover has-parallax"
-    style="padding-bottom: 180px; min-height: 563px"
-  >
-    <span
-      aria-hidden="true"
-      class="wp-block-cover__background has-background-dim-0 has-background-dim"
-      style="background-color: #636662"
-    ></span>
-    <div
-      class="wp-block-cover__image-background has-parallax"
-      style="
-        background-position: 50% 50%;
-        background-image: url(http://archimedestrutturemetalliche.local/wp-content/uploads/2024/12/239341950_4094064100692569_7433970468122201346_n.jpg);
-      "
-    ></div>
-    <div class="wp-block-cover__inner-container">
-      <!-- wp:group {"style":{"spacing":{"padding":{"top":"200px"}}},"layout":{"wideSize":"1170px","contentSize":"1170px","type":"constrained"}} -->
-      <div class="wp-block-group" style="padding-top: 200px">
-        <!-- wp:columns -->
-        <div class="wp-block-columns">
-          <!-- wp:column {"width":"700px"} -->
-          <div class="wp-block-column" style="flex-basis: 700px">
-            <!-- wp:heading {"level":1,"className":"zeever-animate zeever-move-right zeever-delay-1","style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"500","lineHeight":"1.2"},"spacing":{"margin":{"right":"0px","bottom":"40px"}}},"textColor":"zeever-secondary","fontSize":"tiny"} -->
-            <h1
-              class="wp-block-heading zeever-animate zeever-move-right zeever-delay-1 has-zeever-secondary-color has-text-color has-tiny-font-size"
-              style="
-                margin-right: 0px;
-                margin-bottom: 40px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1.2;
-                text-transform: capitalize;
-              "
-            >
-              CREATIVE MIND, CREATIVE WORKS.
-            </h1>
-            <!-- /wp:heading -->
+	<!-- wp:columns {"className":"zeever-margin-top-n80 zeever-animate zeever-move-up zeever-delay-1","style":{"spacing":{"padding":{"left":"10px","right":"10px"}}}} -->
+	<div
+		class="wp-block-columns zeever-margin-top-n80 zeever-animate zeever-move-up zeever-delay-1"
+		style="padding-right: 10px; padding-left: 10px"
+	>
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"className":"is-style-customborderhover zeever-animate zeever-move-up zeever-delay-1","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","right":"30px","left":"30px"}},"color":{"background":"#121212"}},"layout":{"inherit":false,"contentSize":""}} -->
+			<div
+				class="wp-block-group is-style-customborderhover zeever-animate zeever-move-up zeever-delay-1 has-background"
+				style="
+					background-color: #121212;
+					padding-top: 50px;
+					padding-right: 30px;
+					padding-bottom: 50px;
+					padding-left: 30px;
+				"
+			>
+				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
+				<figure class="wp-block-image size-full is-resized">
+					<img
+						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/concept.webp"
+						alt=""
+						style="width: 50px; height: 50px"
+					/>
+				</figure>
+				<!-- /wp:image -->
 
-            <!-- wp:heading {"level":1,"className":"zeever-animate zeever-move-right zeever-delay-3","style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2"},"spacing":{"margin":{"right":"0px","top":"23px"}}},"textColor":"zeever-primary","fontSize":"heading-1"} -->
-            <h1
-              class="wp-block-heading zeever-animate zeever-move-right zeever-delay-3 has-zeever-primary-color has-text-color has-heading-1-font-size"
-              style="
-                margin-top: 23px;
-                margin-right: 0px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.2;
-                text-transform: capitalize;
-              "
-            >
-              We Are Digital Agency
-            </h1>
-            <!-- /wp:heading -->
+				<!-- wp:heading {"textAlign":"left","style":{"spacing":{"margin":{"top":"30px"}},"typography":{"fontSize":"28px","fontStyle":"normal","fontWeight":"600"}},"textColor":"zeever-primary"} -->
+				<h2
+					class="wp-block-heading has-text-align-left has-zeever-primary-color has-text-color"
+					style="
+						margin-top: 30px;
+						font-size: 28px;
+						font-style: normal;
+						font-weight: 600;
+					"
+				>
+					Future Concept.
+				</h2>
+				<!-- /wp:heading -->
 
-            <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"60px"}}}} -->
-            <div class="wp-block-buttons" style="margin-top: 60px">
-              <!-- wp:button {"className":"is-style-custombuttonfill zeever-animate zeever-animate zeever-move-right zeever-delay-1-move-right zeever-animate zeever-move-right zeever-delay-1-delay-5 is-style-custombuttonborder3","style":{"spacing":{"padding":{"top":"18px","bottom":"18px","left":"40px","right":"40px"}},"border":{"radius":"0px"}},"fontFamily":"helvetica-arial"} -->
-              <div
-                class="wp-block-button is-style-custombuttonfill zeever-animate zeever-move-right zeever-delay-1-move-right zeever-delay-1-delay-5 is-style-custombuttonborder3 has-helvetica-arial-font-family"
-              >
-                <a
-                  class="wp-block-button__link wp-element-button"
-                  href="#"
-                  style="
-                    border-radius: 0px;
-                    padding-top: 18px;
-                    padding-right: 40px;
-                    padding-bottom: 18px;
-                    padding-left: 40px;
-                  "
-                  >Getting Started</a
-                >
-              </div>
-              <!-- /wp:button -->
-            </div>
-            <!-- /wp:buttons -->
-          </div>
-          <!-- /wp:column -->
+				<!-- wp:paragraph {"align":"left","textColor":"zeever-bodytext"} -->
+				<p
+					class="has-text-align-left has-zeever-bodytext-color has-text-color"
+				>
+					Lorem ipsum dolor sit amet, consectet adipiscing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore
+				</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
 
-          <!-- wp:column -->
-          <div class="wp-block-column"></div>
-          <!-- /wp:column -->
-        </div>
-        <!-- /wp:columns -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-  </div>
-  <!-- /wp:cover -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"className":"is-style-customboxshadow zeever-animate zeever-move-up zeever-delay-3","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","right":"30px","left":"30px"}},"border":{"width":"2px","style":"solid"},"color":{"background":"#121212"}},"borderColor":"zeever-secondary","layout":{"inherit":false}} -->
+			<div
+				class="wp-block-group is-style-customboxshadow zeever-animate zeever-move-up zeever-delay-3 has-border-color has-zeever-secondary-border-color has-background"
+				style="
+					border-style: solid;
+					border-width: 2px;
+					background-color: #121212;
+					padding-top: 50px;
+					padding-right: 30px;
+					padding-bottom: 50px;
+					padding-left: 30px;
+				"
+			>
+				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
+				<figure class="wp-block-image size-full is-resized">
+					<img
+						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/ideas.webp"
+						alt=""
+						style="width: 50px; height: 50px"
+					/>
+				</figure>
+				<!-- /wp:image -->
+
+				<!-- wp:heading {"textAlign":"left","style":{"spacing":{"margin":{"top":"30px"}},"typography":{"fontSize":"28px","fontStyle":"normal","fontWeight":"600"}},"textColor":"zeever-primary"} -->
+				<h2
+					class="wp-block-heading has-text-align-left has-zeever-primary-color has-text-color"
+					style="
+						margin-top: 30px;
+						font-size: 28px;
+						font-style: normal;
+						font-weight: 600;
+					"
+				>
+					Recinzioni e cancelli
+				</h2>
+				<!-- /wp:heading -->
+
+				<!-- wp:paragraph {"align":"left","textColor":"zeever-bodytext"} -->
+				<p
+					class="has-text-align-left has-zeever-bodytext-color has-text-color"
+				>
+					Fornitore di recinzioni e cancelli. Lorem ipsum dolor sit
+					amet, consectet adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore
+				</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"className":"is-style-customborderhover zeever-animate zeever-move-up zeever-delay-5","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","right":"30px","left":"30px"}},"color":{"background":"#121212"}},"layout":{"inherit":false}} -->
+			<div
+				class="wp-block-group is-style-customborderhover zeever-animate zeever-move-up zeever-delay-5 has-background"
+				style="
+					background-color: #121212;
+					padding-top: 50px;
+					padding-right: 30px;
+					padding-bottom: 50px;
+					padding-left: 30px;
+				"
+			>
+				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
+				<figure class="wp-block-image size-full is-resized">
+					<img
+						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/creative.webp"
+						alt=""
+						style="width: 50px; height: 50px"
+					/>
+				</figure>
+				<!-- /wp:image -->
+
+				<!-- wp:heading {"textAlign":"left","style":{"spacing":{"margin":{"top":"30px"}},"typography":{"fontSize":"28px","fontStyle":"normal","fontWeight":"600"}},"textColor":"zeever-primary"} -->
+				<h2
+					class="wp-block-heading has-text-align-left has-zeever-primary-color has-text-color"
+					style="
+						margin-top: 30px;
+						font-size: 28px;
+						font-style: normal;
+						font-weight: 600;
+					"
+				>
+					Serrature
+				</h2>
+				<!-- /wp:heading -->
+
+				<!-- wp:paragraph {"align":"left","textColor":"zeever-bodytext"} -->
+				<p
+					class="has-text-align-left has-zeever-bodytext-color has-text-color"
+				>
+					In caso di perdita di chiavi, serrature rotte o danni da
+					tentativi di furto, il nostro fabbro d'emergenza 24/7 è
+					sempre pronto ad aiutarti.
+				</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
 </div>
 <!-- /wp:group -->

@@ -1,2 +1,12 @@
 .wp-site-blocks > header {
+	// height:70px;
+	z-index: 999;
+	margin: 0 auto;
+	border-bottom:1px solid  rgba(159, 123, 78, 0.55);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.55);
 }

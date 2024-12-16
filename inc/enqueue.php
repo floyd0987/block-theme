@@ -79,3 +79,5 @@ function add_editor_styles() {
 	add_editor_style( 'css/editor.css' );
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\add_editor_styles' );
+
+

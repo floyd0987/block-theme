@@ -75,3 +75,9 @@ function custom_login_link() {
 	return home_url();
 }
 add_filter( 'login_headerurl', __NAMESPACE__ . '\custom_login_link' );
+
+
+
+
+
+add_filter( 'styles_inline_size_limit', '__return_zero' );
