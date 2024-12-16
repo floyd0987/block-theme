@@ -25,6 +25,16 @@ function theme_setup() {
 	 * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#disabling-the-default-block-patterns
 	 */
 	remove_theme_support( 'core-block-patterns' );
+
+
+	register_nav_menus(
+		[
+			'menu' => esc_html__('Menu Primario', 'block-theme'),
+			'footer'   => esc_html__('Menu Footer', 'block-theme'),
+		]
+	);
+
+
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
 
