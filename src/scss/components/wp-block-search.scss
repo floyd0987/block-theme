@@ -1,0 +1,14 @@
+.wp-block-search {
+	&__input {
+		background: transparent;
+		padding: 0 20px;
+	}
+
+	&__inside-wrapper {
+		margin-bottom: var(--wp--preset--spacing--50);
+	}
+
+	// &__button {
+	// 	padding: 0;
+	// }
+}

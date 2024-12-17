@@ -1,0 +1,30 @@
+.wp-block-tag-cloud {
+	.tag-cloud-link {
+		position: relative;
+		padding: 12px 20px 14px 20px;
+		transition:
+			color 0.3s,
+			border 0.3s;
+
+		margin: 10px 10px 0 0;
+		text-transform: none;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 0;
+		font-size: 14px !important;
+		line-height: 1.2 !important;
+		color: var(--wp--preset--color--zeever-bodytext);
+		text-decoration: none;
+		font-weight: 600;
+
+		border-color: var(--wp--preset--color--zeever-bodytext);
+		transition:
+			background-color 0.3s,
+			color 0.3s,
+			border 0.3s;
+
+		&:hover {
+			background: #e6e6e610;
+		}
+	}
+}
