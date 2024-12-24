@@ -491,6 +491,9 @@
 				}
 			}
 		},
+		"spacing": {
+			"blockGap": "24px"
+		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--metropolis)"
 		}

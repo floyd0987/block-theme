@@ -189,4 +189,18 @@ main,
   right: calc(2em + 30px) !important;
 }
 
+@media (max-width: 768px) {
+  .wc-block-mini-cart__amount {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row-reverse;
+    gap: 10px !important;
+    padding-right: 1em;
+  }
+}
+
 /*# sourceMappingURL=editor.css.map*/

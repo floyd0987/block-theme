@@ -1,0 +1,7 @@
+.menu {
+	@media (max-width: 768px) {
+		flex-direction: row-reverse;
+		gap: 10px!important;
+		padding-right: 1em;
+	}
+}

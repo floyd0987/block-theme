@@ -188,3 +188,17 @@ main,
 .wp-block-cloudcatch-splide-carousel .splide__arrow--next {
   left: calc(2em + 30px) !important;
 }
+
+@media (max-width: 768px) {
+  .wc-block-mini-cart__amount {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row-reverse;
+    gap: 10px !important;
+    padding-left: 1em;
+  }
+}

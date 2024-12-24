@@ -1,0 +1,7 @@
+.wc-block-mini-cart {
+	&__amount {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
