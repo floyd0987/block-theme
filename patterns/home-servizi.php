@@ -80,7 +80,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/strategy.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/strategy.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -121,7 +121,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/ui-design.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ui-design.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -162,7 +162,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/content.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/content.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -220,7 +220,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/marketing.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marketing.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -261,7 +261,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/web.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/web.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
@@ -302,7 +302,7 @@
             <!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
             <figure class="wp-block-image size-full is-resized">
               <img
-                src="/wp-content/themes/archimede-strutture-metalliche/assets/img/social-media.webp"
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/social-media.webp"
                 alt=""
                 style="width: 50px; height: 50px"
               />
