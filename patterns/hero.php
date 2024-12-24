@@ -41,7 +41,7 @@
 				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
 				<figure class="wp-block-image size-full is-resized">
 					<img
-						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/concept.webp"
+						src="/wp-content/themes/archimede-strutture-metalliche/assets/img/concept.webp"
 						alt=""
 						style="width: 50px; height: 50px"
 					/>
@@ -93,7 +93,7 @@
 				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
 				<figure class="wp-block-image size-full is-resized">
 					<img
-						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/ideas.webp"
+						src="/wp-content/themes/archimede-strutture-metalliche/assets/img/ideas.webp"
 						alt=""
 						style="width: 50px; height: 50px"
 					/>
@@ -144,7 +144,7 @@
 				<!-- wp:image {"width":"50px","height":"50px","sizeSlug":"full","linkDestination":"none"} -->
 				<figure class="wp-block-image size-full is-resized">
 					<img
-						src="http://archimedestrutturemetalliche.local/wp-content/themes/archimede-strutture-metalliche/assets/img/creative.webp"
+						src="/wp-content/themes/archimede-strutture-metalliche/assets/img/creative.webp"
 						alt=""
 						style="width: 50px; height: 50px"
 					/>
