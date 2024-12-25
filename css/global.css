@@ -109,6 +109,10 @@ header {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
+.wp-block-site-logo img {
+  max-width: 100px;
+}
+
 body.admin-bar header {
   top: 32px;
 }
@@ -120,7 +124,7 @@ main,
 
 @media (max-width: 768px) {
   .is-layout-constrained {
-    padding: var(--wp--preset--spacing--50);
+    padding: var(--wp--preset--spacing--40);
   }
 }
 .wp-block-categories-list {
@@ -192,6 +196,38 @@ main,
     flex-direction: row-reverse;
     gap: 10px !important;
     padding-right: 1em;
+  }
+}
+.menu .current-menu-item.wp-block-navigation-link {
+  color: var(--wp--preset--color--zeever-secondary);
+}
+.menu .wp-block-navigation-link a:hover {
+  color: var(--wp--preset--color--zeever-secondary);
+}
+@media (max-width: 768px) {
+  .menu .wp-block-navigation__responsive-container-open {
+    border: 2px solid var(--wp--preset--color--zeever-secondary);
+    padding: 4px 6px;
+  }
+  .menu .wp-block-navigation__responsive-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--wp--preset--color--zeever-bgsoft) !important;
+    color: white !important;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth easing */
+    z-index: 9999;
+  }
+  .menu .wp-block-navigation__responsive-container[data-wp-class--has-modal-open=true] {
+    transform: translateX(0);
+  }
+  .menu .wp-block-navigation__responsive-dialog {
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
   }
 }
 

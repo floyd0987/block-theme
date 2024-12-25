@@ -16,7 +16,7 @@
 					"slug": "zeever-primary"
 				},
 				{
-					"color": "#9e7b4e",
+					"color": "#9f7b4e",
 					"name": "Secondary",
 					"slug": "zeever-secondary"
 				},
@@ -49,6 +49,11 @@
 					"color": "#252525",
 					"name": "Form",
 					"slug": "zeever-form"
+				},
+				{
+					"color": "#ff6b00",
+					"name": "Orange Secondary",
+					"slug": "custom-orange-secondary"
 				}
 			]
 		},
