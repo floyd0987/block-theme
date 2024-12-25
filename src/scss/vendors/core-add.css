@@ -219,7 +219,7 @@
 }
 
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
 
     .zeever-post-template-gap .wp-block-post-template.column-2 > .wp-block-post,
     .zeever-post-template-gap .wp-block-post-template.columns-2 > .wp-block-post {
@@ -271,4 +271,4 @@
         width: calc(16.66667%)!important;
     }
 
-}
+} */

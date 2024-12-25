@@ -141,12 +141,7 @@
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 60vw;
-}
-@media (min-width: 1024px) {
-  .wp-block-slick-carousel-slick-carousel .carousel-item img {
-    height: 700px;
-  }
+  height: 35vw;
 }
 .wp-block-slick-carousel-slick-carousel .slider_pagination {
   width: 100%;

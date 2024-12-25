@@ -1,0 +1,27 @@
+.home-latest-news {
+	&__items {
+		padding: 10px;
+
+		.wp-block-post {
+			border-style: solid;
+			border-width: 1px;
+			border-color: var(--wp--preset--color--zeever-border);
+		}
+
+		.taxonomy-category {
+			text-transform: uppercase;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__item-content {
+		padding: 40px;
+
+		@media (max-width: 768px) {
+			padding: 20px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.wp-block-post-excerpt {
+	&__more-link {
+		background: rgba(255, 255, 255, 0);
+		border-style: solid;
+		border-width: 1px;
+		border-color: var(--wp--preset--color--zeever-secondary);
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+
+		padding-top: 15px;
+		padding-right: 30px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		text-decoration: none;
+	}
+}

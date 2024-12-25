@@ -217,48 +217,59 @@
   padding-bottom: 35px !important;
 }
 
-@media only screen and (min-width: 600px) {
-  .zeever-post-template-gap .wp-block-post-template.column-2 > .wp-block-post,
-  .zeever-post-template-gap .wp-block-post-template.columns-2 > .wp-block-post {
-    width: calc(50% - 35px) !important;
-  }
-  .zeever-post-template-gap .wp-block-post-template.column-3 > .wp-block-post,
-  .zeever-post-template-gap .wp-block-post-template.columns-3 > .wp-block-post {
-    width: calc(33.33333% - 35px) !important;
-  }
-  .zeever-post-template-gap .wp-block-post-template.column-4 > .wp-block-post,
-  .zeever-post-template-gap .wp-block-post-template.columns-4 > .wp-block-post {
-    width: calc(25% - 35px) !important;
-  }
-  .zeever-post-template-gap .wp-block-post-template.column-5 > .wp-block-post,
-  .zeever-post-template-gap .wp-block-post-template.columns-5 > .wp-block-post {
-    width: calc(20% - 35px) !important;
-  }
-  .zeever-post-template-gap .wp-block-post-template.column-6 > .wp-block-post,
-  .zeever-post-template-gap .wp-block-post-template.columns-6 > .wp-block-post {
-    width: calc(16.66667% - 35px) !important;
-  }
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-2 > .wp-block-post,
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-2 > .wp-block-post {
-    width: 50% !important;
-  }
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-3 > .wp-block-post,
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-3 > .wp-block-post {
-    width: 33.33333% !important;
-  }
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-4 > .wp-block-post,
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-4 > .wp-block-post {
-    width: 25% !important;
-  }
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-5 > .wp-block-post,
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-5 > .wp-block-post {
-    width: 20% !important;
-  }
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-6 > .wp-block-post,
-  body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-6 > .wp-block-post {
-    width: 16.66667% !important;
-  }
-}
+/* @media only screen and (min-width: 600px) {
+
+    .zeever-post-template-gap .wp-block-post-template.column-2 > .wp-block-post,
+    .zeever-post-template-gap .wp-block-post-template.columns-2 > .wp-block-post {
+        width: calc(50% - 35px)!important;
+    }
+
+    .zeever-post-template-gap .wp-block-post-template.column-3 > .wp-block-post,
+    .zeever-post-template-gap .wp-block-post-template.columns-3 > .wp-block-post {
+        width: calc(33.33333% - 35px)!important;
+    }
+
+    .zeever-post-template-gap .wp-block-post-template.column-4 > .wp-block-post,
+    .zeever-post-template-gap .wp-block-post-template.columns-4 > .wp-block-post {
+        width: calc(25% - 35px)!important;
+    }
+
+    .zeever-post-template-gap .wp-block-post-template.column-5 > .wp-block-post,
+    .zeever-post-template-gap .wp-block-post-template.columns-5 > .wp-block-post {
+        width: calc(20% - 35px)!important;
+    }
+
+    .zeever-post-template-gap .wp-block-post-template.column-6 > .wp-block-post,
+    .zeever-post-template-gap .wp-block-post-template.columns-6 > .wp-block-post {
+        width: calc(16.66667% - 35px)!important;
+    }
+
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-2 > .wp-block-post,
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-2 > .wp-block-post {
+        width: calc(50%)!important;
+    }
+
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-3 > .wp-block-post,
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-3 > .wp-block-post {
+        width: calc(33.33333%)!important;
+    }
+
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-4 > .wp-block-post,
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-4 > .wp-block-post {
+        width: calc(25%)!important;
+    }
+
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-5 > .wp-block-post,
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-5 > .wp-block-post {
+        width: calc(20%)!important;
+    }
+
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.column-6 > .wp-block-post,
+    body:not(.editor-styles-wrapper) .zeever-post-template-gap .wp-block-post-template.columns-6 > .wp-block-post {
+        width: calc(16.66667%)!important;
+    }
+
+} */
 /*
 Josh's Custom CSS Reset
 https://www.joshwcomeau.com/css/custom-css-reset/
@@ -495,6 +506,46 @@ main,
     overflow-y: auto;
     padding: 20px;
   }
+}
+
+.home-latest-news__items {
+  padding: 10px;
+}
+.home-latest-news__items .wp-block-post {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--wp--preset--color--zeever-border);
+}
+.home-latest-news__items .taxonomy-category {
+  text-transform: uppercase;
+}
+.home-latest-news__items .taxonomy-category a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.home-latest-news__item-content {
+  padding: 40px;
+}
+@media (max-width: 768px) {
+  .home-latest-news__item-content {
+    padding: 20px;
+  }
+}
+
+.wp-block-post-excerpt__more-link {
+  background: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--wp--preset--color--zeever-secondary);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  text-decoration: none;
 }
 
 :root {
