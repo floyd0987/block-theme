@@ -1,3 +1,10 @@
+<?php
+/**
+ * Title: front-page
+ * Slug: block-theme/front-page
+ * Inserter: no
+ */
+?>
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
 <!-- wp:cloudcatch/splide-carousel {"autoplay":true} -->
@@ -119,34 +126,10 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Progetti - Label"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"zeever-bgsoft","layout":{"wideSize":"1170px","contentSize":"1170px","type":"constrained"}} -->
-<div class="wp-block-group has-zeever-bgsoft-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Servizi Title"}} -->
-<div class="wp-block-group"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"textAlign":"left","className":"is-style-lineseparator zeever-animate zeever-move-right zeever-delay-1","textColor":"zeever-primary","fontSize":"heading-2"} -->
-<h2 class="wp-block-heading has-text-align-left is-style-lineseparator zeever-animate zeever-move-right zeever-delay-1 has-zeever-primary-color has-text-color has-heading-2-font-size">Progetti </h2>
-<!-- /wp:heading -->
-
-<!-- wp:heading {"textAlign":"left","className":"zeever-animate zeever-move-right zeever-delay-3","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"uppercase"}},"textColor":"zeever-secondary","fontSize":"tiny"} -->
-<h2 class="wp-block-heading has-text-align-left zeever-animate zeever-move-right zeever-delay-3 has-zeever-secondary-color has-text-color has-tiny-font-size" style="font-style:normal;font-weight:500;text-transform:uppercase">I nostri progetti </h2>
-<!-- /wp:heading --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
-
 <!-- wp:slick-carousel/slick-carousel {"selectedPosts":[176,171,187,163]} /-->
 
-<!-- wp:group {"metadata":{"name":"Servizi - Label"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"zeever-bgsoft","layout":{"wideSize":"1170px","contentSize":"1170px","type":"constrained"}} -->
-<div class="wp-block-group has-zeever-bgsoft-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns -->
+<!-- wp:group {"metadata":{"name":"Servizi"},"style":{"spacing":{"padding":{"top":"100px","bottom":"100px"}}},"backgroundColor":"zeever-bgsoft","layout":{"wideSize":"1170px","contentSize":"1170px","type":"constrained"}} -->
+<div class="wp-block-group has-zeever-bgsoft-background-color has-background" style="padding-top:100px;padding-bottom:100px"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"metadata":{"name":"Servizi Title"}} -->
 <div class="wp-block-group"><!-- wp:columns -->
@@ -199,8 +182,8 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"40px"}}}} -->
 <div class="wp-block-group" style="padding-top:40px"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"bottom"} -->
-<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:cover {"url":"http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/employee-meeting-work-job-working-argentina-1599048-pxhere.com.webp","dimRatio":30,"customOverlayColor":"#050505","isUserOverlayColor":true,"minHeight":580,"minHeightUnit":"px","isDark":false,"style":{"spacing":{"padding":{"left":"20px"}}}} -->
-<div class="wp-block-cover is-light" style="padding-left:20px;min-height:580px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim" style="background-color:#050505"></span><img class="wp-block-cover__image-background" alt="" src="http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/employee-meeting-work-job-working-argentina-1599048-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"480px"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/employee-meeting-work-job-working-argentina-1599048-pxhere.com.webp","dimRatio":30,"customOverlayColor":"#050505","isUserOverlayColor":true,"minHeight":580,"minHeightUnit":"px","isDark":false,"style":{"spacing":{"padding":{"left":"20px"}}}} -->
+<div class="wp-block-cover is-light" style="padding-left:20px;min-height:580px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim" style="background-color:#050505"></span><img class="wp-block-cover__image-background " alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/employee-meeting-work-job-working-argentina-1599048-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"480px"} -->
 <div style="height:480px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -218,8 +201,8 @@
 <div class="wp-block-column"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/employee-meeting-work-job-working-argentina-1599057-pxhere.com.webp","dimRatio":30,"minHeight":280,"isDark":false} -->
-<div class="wp-block-cover is-light" style="min-height:280px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/employee-meeting-work-job-working-argentina-1599057-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"140px"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/employee-meeting-work-job-working-argentina-1599057-pxhere.com.webp","dimRatio":30,"minHeight":280,"isDark":false} -->
+<div class="wp-block-cover is-light" style="min-height:280px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background " alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/employee-meeting-work-job-working-argentina-1599057-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"140px"} -->
 <div style="height:140px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -238,8 +221,8 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"20px"}}}} -->
 <div class="wp-block-group" style="padding-top:20px"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/computer-group-building-home-internet-office-945774-pxhere.com.webp","dimRatio":30,"minHeight":280,"isDark":false} -->
-<div class="wp-block-cover is-light" style="min-height:280px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="http://archimedestrutturemetalliche.local/wp-content/themes/block-theme/assets/images/computer-group-building-home-internet-office-945774-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"140px"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/computer-group-building-home-internet-office-945774-pxhere.com.webp","dimRatio":30,"minHeight":280,"isDark":false} -->
+<div class="wp-block-cover is-light" style="min-height:280px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span><img class="wp-block-cover__image-background " alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/computer-group-building-home-internet-office-945774-pxhere.com.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"140px"} -->
 <div style="height:140px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 

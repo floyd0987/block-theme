@@ -17,10 +17,10 @@ $servizi_query = new WP_Query($args);
 if ($servizi_query->have_posts()) {
 ?>
 
-	<div class="wp-block-group zeever-animate zeever-move-up zeever-delay-3 has-global-padding is-layout-constrained wp-container-core-group-is-layout-10 wp-block-group-is-layout-constrained" style="padding-top:40px">
+	<div class="wp-block-home-servizi wp-block-group zeever-animate zeever-move-up zeever-delay-3 has-global-padding is-layout-constrained wp-container-core-group-is-layout-10 wp-block-group-is-layout-constrained" style="padding-top:40px">
 
 			<?php
-			echo '<div class="wp-block-group servizi-block">';
+			echo '<div class="wp-block-group home-servizi">';
 			$counter = 0; // Initialize counter
 
 			while ($servizi_query->have_posts()) {
@@ -34,7 +34,7 @@ if ($servizi_query->have_posts()) {
 					echo '<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">';
 				}
 
-				echo '<div class="wp-block-column is-style-customborderbottomhover zeever-animate zeever-move-up zeever-delay-1 has-background" style="background-color: #121212; padding: 50px 40px;">';
+				echo '<div class="home-servizi__item wp-block-column is-style-customborderbottomhover zeever-animate zeever-move-up zeever-delay-1 has-background">';
 				if (has_post_thumbnail()) {
 					echo '<figure class="wp-block-image size-full is-resized">';
 					the_post_thumbnail('thumbnail', array('style' => 'width: 50px; height: 50px;'));

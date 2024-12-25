@@ -91,3 +91,27 @@ add_filter( 'login_headerurl', __NAMESPACE__ . '\custom_login_link' );
 
 
 add_filter( 'styles_inline_size_limit', '__return_zero' );
+
+
+
+
+
+
+
+// Add custom menu for wp_block post type
+function add_wp_block_menu() {
+    // Check if the function exists to avoid potential conflicts
+    if (function_exists('add_menu_page')) {
+        add_menu_page(
+            'WP Blocks',                  // Page title
+            'WP Blocks',                  // Menu title
+            'manage_options',             // Capability required to access
+            'edit.php?post_type=wp_block', // The URL for the custom post type
+            '',                           // Function to display the page content (we can leave it empty)
+            'dashicons-block-default',    // Dashicon for the menu item (you can change it)
+            20                            // Position of the menu item
+        );
+    }
+}
+// Hook the function to the admin_menu action
+add_action('admin_menu', __NAMESPACE__ . '\add_wp_block_menu');

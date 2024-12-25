@@ -8,10 +8,14 @@
  * Categories: featured
  * Keywords: subscribe, newsletter, sign up
  * Block Types: core/group
- * Inserter: yes
+ * Inserter: no
  *
  * @package BlockTheme
  */
+
+if (is_page("contatti")) {
+	return;
+}
 ?>
 
 
@@ -37,7 +41,9 @@
 
 					<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
 					<div class="wp-block-buttons" style="margin-top:40px"><!-- wp:button {"style":{"border":{"radius":"0px"},"spacing":{"padding":{"top":"15px","right":"40px","bottom":"15px","left":"40px"}}},"className":"is-style-custombuttonfill is-style-custombuttonborder3 zeever-animate zeever-move-up zeever-delay-1","fontFamily":"helvetica-arial"} -->
-						<div class="wp-block-button is-style-custombuttonfill is-style-custombuttonborder3 zeever-animate zeever-move-up zeever-delay-1 has-helvetica-arial-font-family"><a class="wp-block-button__link" href="#" style="border-radius:0px;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px">Inizia ora</a></div>
+						<div class="wp-block-button is-style-custombuttonfill is-style-custombuttonborder3 zeever-animate zeever-move-up zeever-delay-1 has-helvetica-arial-font-family">
+							<a class="wp-block-button__link" href="<?php echo get_permalink(get_page_by_path('contatti')); ?>" style="border-radius:0px;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px">Inizia ora</a>
+						</div>
 						<!-- /wp:button -->
 					</div>
 					<!-- /wp:buttons -->

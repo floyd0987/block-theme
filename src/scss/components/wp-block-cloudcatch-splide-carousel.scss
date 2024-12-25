@@ -4,20 +4,20 @@
 			bottom: 6em;
 		}
 
-
 		&__arrow {
 			&--prev {
-				left: calc(2em + 30px)!important;
+				left: calc(2em + 30px) !important;
 			}
 
 			&--next {
-				right: calc(2em + 30px)!important;
+				right: calc(2em + 30px) !important;
 			}
 		}
-
 	}
 
-
-
-
+	&.wp-block-splide-carousel {
+		&__container {
+			margin-block-start: 0;
+		}
+	}
 }
