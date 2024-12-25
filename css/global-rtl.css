@@ -97,7 +97,7 @@ input[type=submit] {
   text-decoration: none;
 }
 
-.wp-site-blocks > header {
+header {
   z-index: 999;
   margin: 0 auto;
   border-bottom: 1px solid rgba(159, 123, 78, 0.55);
@@ -118,6 +118,11 @@ main,
   margin-top: 9em;
 }
 
+@media (max-width: 768px) {
+  .is-layout-constrained {
+    padding: var(--wp--preset--spacing--50);
+  }
+}
 .wp-block-categories-list {
   list-style-type: none;
   padding-right: 0;
