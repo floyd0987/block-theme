@@ -12,6 +12,7 @@
  * @package BlockTheme
  */
 
+
 ?>
 <!-- wp:group {"layout":{"inherit":false}} -->
 <div class="wp-block-group"><!-- wp:cover {"url":"<?php echo get_template_directory_uri(); ?>/assets/img/achievement-agreement-arms-bump-business-cheer-up-1433619-pxhere.com.webp","id":139,"dimRatio":70,"overlayColor":"black","focalPoint":{"x":"0.50","y":0.57},"minHeight":460,"contentPosition":"center center","style":{"spacing":{"padding":{"bottom":"140px"}}}} -->
