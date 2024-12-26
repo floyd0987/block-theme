@@ -1,0 +1,27 @@
+.wc-block-product-categories-list {
+	list-style-type: none;
+	padding-left: 0;
+	width: 100%;
+
+	.wc-block-product-categories-list-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-bottom: 1px solid var(--wp--preset--color--zeever-bodytext);
+		padding: 13px 0 13px 0;
+		a {
+			flex-grow: 1;
+			text-decoration: none;
+			font-weight: 600;
+			color: #D0D0D0;
+		}
+
+		&.current-cat a {
+			color: var(--wp--preset--color--zeever-secondary);
+		}
+
+
+	}
+
+}
