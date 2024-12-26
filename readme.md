@@ -136,3 +136,13 @@ BlockTheme is licensed under the GNU General Public License v3.0 or later.
 - TwentyTwentyFour: https://wordpress.org/themes/twentytwentyfour
 - WordPress Scripts: https://developer.wordpress.org/block-editor/packages/packages-scripts/
 - Aurooba Ahmed: https://github.com/aurooba (Much of the work and thoughtfulness behind this theme is completely Aurooba)
+
+
+
+secondary
+9F7B4E
+
+
+
+bgsoft
+151617

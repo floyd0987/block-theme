@@ -48,7 +48,8 @@ const HeaderVisibility = () => {
     prevScrollPos = currentScrollPos;
   });
 };
-HeaderVisibility();
+
+// HeaderVisibility();
 /******/ })()
 ;
 //# sourceMappingURL=scripts.js.map
