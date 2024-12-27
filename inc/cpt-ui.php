@@ -114,3 +114,51 @@ function cptui_register_my_cpts() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );
+
+
+
+
+
+
+
+/**
+ * Taxonomies
+ */
+
+
+ function cptui_register_my_taxes() {
+
+	/**
+	 * Taxonomy: Categorie Progetti.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Categorie Progetti", "block-theme" ),
+		"singular_name" => esc_html__( "Categoria Progetti", "block-theme" ),
+	];
+
+
+	$args = [
+		"label" => esc_html__( "Categorie Progetti", "block-theme" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'categorie-progetti', 'with_front' => true, ],
+		"show_admin_column" => true,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "categorie-progetti",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"rest_namespace" => "wp/v2",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "categorie-progetti", [ "progetti" ], $args );
+}
+add_action( 'init', 'cptui_register_my_taxes' );
