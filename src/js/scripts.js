@@ -29,28 +29,29 @@ for ( let element of elements ) {
  */
 
 const HeaderVisibility = () => {
-	let prevScrollPos = window.scrollY;
-	const header = document.querySelector( 'header' );
+    let prevScrollPos = window.scrollY;
+    const header = document.querySelector('header');
+    const defaultOpacity = 0.35;
 
-	window.addEventListener( 'scroll', () => {
-		const currentScrollPos = window.scrollY;
+    window.addEventListener('scroll', () => {
+        const currentScrollPos = window.scrollY;
+        const maxOpacity = 0.85;
+        const opacityIncrement = 0.1;
 
-		if ( prevScrollPos < currentScrollPos ) {
-			// Scroll down: Hide the header with fade-out
-			header.style.transition = 'opacity 0.3s ease';
-			header.style.opacity = '0';
-			// setTimeout(() => {
-			//   header.style.display = "none";
-			// }, 300);
-		} else if ( prevScrollPos > currentScrollPos ) {
-			// Scroll up: Show the header
-			header.style.display = 'block'; // Ensure it's visible first
-			header.style.transition = 'opacity 0.3s ease';
-			header.style.opacity = '1';
-		}
+        if (prevScrollPos < currentScrollPos) {
+            // Scroll down: Make header darker
+            header.style.transition = 'background-color 0.3s ease';
+            const currentOpacity = parseFloat(getComputedStyle(header).backgroundColor.split(',')[3]) || defaultOpacity;
+            const newOpacity = Math.min(maxOpacity, currentOpacity + opacityIncrement);
+            header.style.backgroundColor = `rgba(0, 0, 0, ${newOpacity})`;
+        } else if (prevScrollPos > currentScrollPos) {
+            // Scroll up: Lighten header back to default
+            header.style.transition = 'background-color 0.3s ease';
+            header.style.backgroundColor = `rgba(0, 0, 0, ${defaultOpacity})`;
+        }
 
-		prevScrollPos = currentScrollPos;
-	} );
+        prevScrollPos = currentScrollPos;
+    });
 };
 
-// HeaderVisibility();
+HeaderVisibility();

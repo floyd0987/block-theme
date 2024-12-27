@@ -388,6 +388,11 @@ body.admin-bar header {
   top: 32px;
 }
 
+main,
+.woocommerce div.product {
+  margin-top: 9em;
+}
+
 @media (max-width: 768px) {
   .is-layout-constrained {
     padding: var(--wp--preset--spacing--40);
@@ -489,22 +494,37 @@ body.admin-bar header {
 .menu .wp-block-navigation-link a:hover {
   color: var(--wp--preset--color--zeever-secondary);
 }
+.menu .wp-block-navigation-item__label {
+  color: var(--wp--preset--color--zeever-primary);
+}
+.menu .current-menu-item .wp-block-navigation-item__label {
+  color: var(--wp--preset--color--zeever-secondary);
+}
 @media (max-width: 768px) {
-  .menu .wp-block-navigation__responsive-container-open {
+  .menu .wp-block-navigation__responsive-container-open, .menu .wp-block-navigation__responsive-container-close {
     border: 2px solid var(--wp--preset--color--zeever-secondary);
     padding: 4px 6px;
+    color: var(--wp--preset--color--zeever-primary);
+  }
+  .menu .wp-block-navigation__responsive-close {
+    padding: 15px;
   }
   .menu .wp-block-navigation__responsive-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
     background-color: var(--wp--preset--color--zeever-bgsoft) !important;
-    color: white !important;
-    transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth easing */
-    z-index: 9999;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: flex-end;
+    right: -110%;
+    overflow: hidden auto;
+    position: fixed;
+    top: 0px;
+    transition: right 0.6s cubic-bezier(0.6, 0.1, 0.68, 0.53);
+    width: 100%;
+  }
+  .menu .wp-block-navigation__responsive-container.is-menu-open {
+    right: 0;
   }
   .menu .wp-block-navigation__responsive-container[data-wp-class--has-modal-open=true] {
     transform: translateX(0);
@@ -593,20 +613,16 @@ body.admin-bar header {
   padding: 40px;
   margin: 0 auto;
 }
-
 .contact-form__row {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .contact-form__col {
   flex: 1;
   min-width: 320px;
 }
-
-.contact-form__input,
-.contact-form__textarea {
+.contact-form__input, .contact-form__textarea {
   width: 100%;
   padding: 15px;
   background-color: #1a1a1a;
@@ -614,16 +630,13 @@ body.admin-bar header {
   color: white;
   box-sizing: border-box;
 }
-
 .contact-form__textarea {
   height: 300px;
 }
-
 .contact-form__submit {
   text-align: center;
   margin-top: 30px;
 }
-
 .contact-form__button {
   background: transparent;
   color: white;
@@ -632,8 +645,29 @@ body.admin-bar header {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .contact-form__button:hover {
   background-color: cyan;
   color: #111;
+}
+.contact-form ::-moz-placeholder {
+  color: white;
+  opacity: 1; /* Ensure full opacity */
+}
+.contact-form ::placeholder {
+  color: white;
+  opacity: 1; /* Ensure full opacity */
+}
+.contact-form :-ms-input-placeholder {
+  /* For Internet Explorer */
+  color: white;
+}
+.contact-form ::-ms-input-placeholder {
+  /* For Edge */
+  color: white;
+}
+
+.wp-block-separator {
+  width: 10%;
+  min-height: 5px;
+  padding: 0;
 }
