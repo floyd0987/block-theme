@@ -388,11 +388,6 @@ body.admin-bar header {
   top: 32px;
 }
 
-main,
-.woocommerce div.product {
-  margin-top: 9em;
-}
-
 @media (max-width: 768px) {
   .is-layout-constrained {
     padding: var(--wp--preset--spacing--40);
@@ -589,6 +584,58 @@ main,
 }
 .wc-block-product-categories-list .wc-block-product-categories-list-item.current-cat a {
   color: var(--wp--preset--color--zeever-secondary);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.contact-form__row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form__col {
+  flex: 1;
+  min-width: 320px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+.contact-form__textarea {
+  height: 300px;
+}
+
+.contact-form__submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-form__button {
+  background: transparent;
+  color: white;
+  border: 1px solid cyan;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form__button:hover {
+  background-color: cyan;
+  color: #111;
 }
 
 /*# sourceMappingURL=editor.css.map*/
