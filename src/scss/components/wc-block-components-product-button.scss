@@ -1,0 +1,11 @@
+.wc-block-components-product-button {
+	&__button {
+		border: 1px solid var(--wp--preset--color--zeever-secondary) !important;
+
+		&:hover {
+			// background-color: var(--wp--preset--color--zeever-secondary)!important;
+			color: var(--wp--preset--color--zeever-secondary) !important;
+			// border: 1px solid var(--wp--preset--color--zeever-primary) !important;
+		}
+	}
+}

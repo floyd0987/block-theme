@@ -671,3 +671,30 @@ main,
   min-height: 5px;
   padding: 0;
 }
+
+.taxonomy-categorie-progetti a {
+  text-decoration: none;
+}
+
+.taxonomy-category a {
+  text-decoration: none;
+}
+
+.wp-block-post-template-is-layout-grid .wp-block-group {
+  height: 100%;
+}
+
+.taxonomy-product_cat a {
+  text-decoration: none;
+}
+
+.wc-block-components-product-button__button {
+  border: 1px solid var(--wp--preset--color--zeever-secondary) !important;
+}
+.wc-block-components-product-button__button:hover {
+  color: var(--wp--preset--color--zeever-secondary) !important;
+}
+
+.wp-block-woocommerce-product-template .wp-block-group {
+  height: 100%;
+}

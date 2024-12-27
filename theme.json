@@ -489,7 +489,7 @@
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--zeever-bodytext)"
+					"text": "var(--wp--preset--color--zeever-primary)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--primary)"
