@@ -403,7 +403,8 @@ body.admin-bar header {
   top: 32px;
 }
 
-.woocommerce div.product {
+.woocommerce div.product,
+.certificazioni-template-default {
   margin-top: 9em;
 }
 
@@ -710,6 +711,15 @@ body.admin-bar header {
 
 .wp-block-woocommerce-product-template .wp-block-group {
   height: 100%;
+}
+
+table {
+  color: white;
+  background: #212223;
+}
+table thead {
+  background: var(--wp--preset--color--zeever-secondary);
+  color: black;
 }
 
 /*# sourceMappingURL=editor.css.map*/

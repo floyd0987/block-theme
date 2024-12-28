@@ -36,6 +36,11 @@
 					"slug": "zeever-bgsoft"
 				},
 				{
+					"color": "#414446",
+					"name": "Background Soft 2",
+					"slug": "zeever-bgsoft2"
+				},
+				{
 					"color": "#363636",
 					"name": "Border",
 					"slug": "zeever-border"
