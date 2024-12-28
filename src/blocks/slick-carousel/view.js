@@ -20,7 +20,6 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
 
-
 // Import Slick Carousel styles
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
@@ -29,38 +28,41 @@
 import 'slick-carousel';
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from slick-carousel-slick-carousel block)' );
+// console.log( 'Hello World! (from slick-carousel-slick-carousel block)' );
 /* eslint-enable no-console */
 
-
-
-function mfnSliderContent($) {
-
-	var pager = function(el, i) {
+function mfnSliderContent( $ ) {
+	var pager = function ( el, i ) {
 		return '<a>' + i + '</a>';
 	};
 
-
-	var slider = $('.carousel.center');
+	var slider = $( '.carousel.center' );
 	var count = 1;
 	var centerMode = true;
 	const rtl = false;
-	const autoplay = false
-	const autoplaySpeed = 5000
+	const autoplay = false;
+	const autoplaySpeed = 5000;
 
-	if (slider.closest('.content_slider').hasClass('carousel')) {
-		count = slickAutoResponsive(slider);
+	if ( slider.closest( '.content_slider' ).hasClass( 'carousel' ) ) {
+		count = slickAutoResponsive( slider );
 
-		$(window).bind('debouncedresize', function() {
-			slider.slick('slickSetOption', 'slidesToShow', slickAutoResponsive(slider), false);
-			slider.slick('slickSetOption', 'slidesToScroll', slickAutoResponsive(slider), true);
-		});
+		$( window ).bind( 'debouncedresize', function () {
+			slider.slick(
+				'slickSetOption',
+				'slidesToShow',
+				slickAutoResponsive( slider ),
+				false
+			);
+			slider.slick(
+				'slickSetOption',
+				'slidesToScroll',
+				slickAutoResponsive( slider ),
+				true
+			);
+		} );
 	}
 
-
-
-
-	slider.slick({
+	slider.slick( {
 		cssEase: 'cubic-bezier(.4,0,.2,1)',
 		dots: true,
 		infinite: true,
@@ -70,12 +72,13 @@ function mfnSliderContent($) {
 		centerMode: centerMode,
 		centerPadding: '20%',
 
-		prevArrow: '<a class="button button_js slider_prev" href="#"><span class="button_icon"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L5 8l6 7" stroke="currentColor" fill="none" /></svg></span></a>',
-		nextArrow: '<a class="button button_js slider_next" href="#"><span class="button_icon"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5 1l6 7-6 7" stroke="currentColor" fill="none" /></svg></span></a>',
-
+		prevArrow:
+			'<a class="button button_js slider_prev" href="#"><span class="button_icon"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L5 8l6 7" stroke="currentColor" fill="none" /></svg></span></a>',
+		nextArrow:
+			'<a class="button button_js slider_next" href="#"><span class="button_icon"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M5 1l6 7-6 7" stroke="currentColor" fill="none" /></svg></span></a>',
 
 		adaptiveHeight: true,
-		appendDots: slider.siblings('.slider_pager'),
+		appendDots: slider.siblings( '.slider_pager' ),
 		customPaging: pager,
 
 		rtl: rtl ? true : false,
@@ -83,21 +86,10 @@ function mfnSliderContent($) {
 		autoplaySpeed: autoplaySpeed,
 
 		slidesToShow: count,
-		slidesToScroll: count
-	});
-
-
-
-
-
-
-
-
-
-
+		slidesToScroll: count,
+	} );
 }
 
-jQuery(document).ready(function($) {
-
-	mfnSliderContent($)
-});
+jQuery( document ).ready( function ( $ ) {
+	mfnSliderContent( $ );
+} );

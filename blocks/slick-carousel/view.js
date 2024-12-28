@@ -3140,7 +3140,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* eslint-disable no-console */
-console.log('Hello World! (from slick-carousel-slick-carousel block)');
+// console.log( 'Hello World! (from slick-carousel-slick-carousel block)' );
 /* eslint-enable no-console */
 
 function mfnSliderContent($) {
