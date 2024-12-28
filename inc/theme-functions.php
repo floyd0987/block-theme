@@ -23,7 +23,7 @@ if ( 'core/cover' === $block['blockName'] && (is_archive() || is_home()) ) {
 
         // Modify the block's HTML to include the dynamic background image
         $block_content = str_replace(
-            'class="wp-block-cover"',
+            'class="wp-block-cover is-light"',
             'class="wp-block-cover" style="background-image: url(' . esc_url( $image_url ) . '); background-repeat: no-repeat; background-size: cover; padding-bottom:140px;min-height:460px;aspect-ratio:unset;"',
             $block_content
         );

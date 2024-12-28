@@ -380,15 +380,29 @@ header {
 
 @media (max-width: 768px) {
   .wp-block-site-logo img {
-    max-width: 100px;
+    max-width: 30vw;
   }
+}
+@media (max-width: 1040px) {
+  .wp-block-site-logo img {
+    max-width: 20vw;
+  }
+}
+
+.wc-block-customer-account__account-icon,
+.wc-block-mini-cart__icon,
+.wc-block-mini-cart__amount {
+  color: #fff;
+}
+
+.wc-block-mini-cart__badge {
+  background-color: #fff;
 }
 
 body.admin-bar header {
   top: 32px;
 }
 
-main,
 .woocommerce div.product {
   margin-top: 9em;
 }
@@ -610,7 +624,6 @@ main,
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px;
   margin: 0 auto;
 }
 .contact-form__row {
@@ -666,7 +679,7 @@ main,
   color: white;
 }
 
-.wp-block-separator {
+.wp-block-cover .wp-block-separator {
   width: 10%;
   min-height: 5px;
   padding: 0;

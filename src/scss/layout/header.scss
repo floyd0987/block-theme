@@ -14,7 +14,23 @@ header {
 .wp-block-site-logo {
 	img {
 		@media (max-width: 768px) {
-			max-width: 100px;
+			max-width: 30vw;
 		}
 	}
+
+	img {
+		@media (max-width: 1040px) {
+			max-width: 20vw;
+		}
+	}
+}
+
+.wc-block-customer-account__account-icon,
+.wc-block-mini-cart__icon,
+.wc-block-mini-cart__amount {
+	color: #fff;
+}
+
+.wc-block-mini-cart__badge {
+	background-color: #fff;
 }

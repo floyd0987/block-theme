@@ -14,7 +14,7 @@
  */
 
 
-$name = get_queried_object()->name;
+$name = !empty(get_queried_object()->name) ? get_queried_object()->name : "default";
 $image = get_stylesheet_directory_uri() . '/assets/images/'. $name . '.jpg';
 ?>
 
