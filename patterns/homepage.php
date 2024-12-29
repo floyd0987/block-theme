@@ -149,7 +149,7 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:slick-carousel/slick-carousel {"selectedPosts":[176,171,187,163]} /--></div>
+<!-- wp:slick-carousel/slick-carousel {"selectedPosts":[]} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Servizi"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"0","right":"0"}}},"backgroundColor":"black","layout":{"type":"constrained"}} -->
