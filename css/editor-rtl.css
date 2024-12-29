@@ -378,14 +378,14 @@ header {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 768px) {
-  .wp-block-site-logo img {
-    max-width: 30vw;
-  }
-}
 @media (max-width: 1040px) {
   .wp-block-site-logo img {
     max-width: 20vw;
+  }
+}
+@media (max-width: 768px) {
+  .wp-block-site-logo img {
+    max-width: 30vw;
   }
 }
 
@@ -413,6 +413,10 @@ body.admin-bar header {
     padding: var(--wp--preset--spacing--40);
   }
 }
+.home .entry-content {
+  margin-block-start: 0;
+}
+
 .wp-block-group {
   padding-bottom: 0;
   padding-top: 0;

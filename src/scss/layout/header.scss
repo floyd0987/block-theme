@@ -12,17 +12,20 @@ header {
 }
 
 .wp-block-site-logo {
-	img {
-		@media (max-width: 768px) {
-			max-width: 30vw;
-		}
-	}
 
 	img {
 		@media (max-width: 1040px) {
 			max-width: 20vw;
 		}
 	}
+
+	img {
+		@media (max-width: 768px) {
+			max-width: 30vw;
+		}
+	}
+
+
 }
 
 .wc-block-customer-account__account-icon,
