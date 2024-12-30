@@ -40,3 +40,18 @@ if ( 'core/cover' === $block['blockName'] && (is_archive() || is_home()) ) {
 }
 
 add_filter( 'render_block', 'custom_render_block_type', 10, 2 );
+
+
+
+
+
+
+function restrict_fse_for_shop_manager() {
+    $role = get_role('shop_manager');
+
+    if ($role) {
+        // Remove capability to edit theme options
+        $role->remove_cap('edit_theme_options');
+    }
+}
+add_action('init', 'restrict_fse_for_shop_manager');
