@@ -1,0 +1,1 @@
+console.log("Hello World! (from block-theme-categorie-progetti block)");

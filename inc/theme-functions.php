@@ -5,6 +5,12 @@ add_filter('get_the_archive_title', function($title) {
     return preg_replace('/^\w+: /', '', $title);
 });
 
+add_filter('get_the_archive_title', function ($title) {
+    if (is_archive()) {
+        $title = preg_replace('/^Categoria Progetti:\s*/', '', $title);
+    }
+    return $title;
+});
 
 
 

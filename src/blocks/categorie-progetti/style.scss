@@ -1,0 +1,57 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-block-theme-categorie-progetti {
+	.categorie-progetti {
+		&__list {
+			display: flex;
+			gap: 15px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+
+			@media (max-width: 768px) {
+				display: flex;
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				-webkit-overflow-scrolling: touch;
+				gap: 10px;
+			}
+		}
+
+		&__item {
+			border: 2px solid var(--wp--preset--color--zeever-secondary);
+			font-size: 15px;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			padding: 18px 40px;
+
+			@media (max-width: 768px) {
+				flex: 0 0 auto;
+			}
+		}
+
+		&__link {
+			text-decoration: none;
+			color: #fff;
+			font-weight: 600;
+
+			&:hover {
+				color: var(--wp--preset--color--zeever-secondary);
+			}
+		}
+
+		&__show-all {
+			display: block;
+			margin-top: 10px;
+			font-weight: 700;
+		}
+	}
+}
