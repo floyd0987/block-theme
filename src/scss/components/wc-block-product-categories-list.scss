@@ -4,7 +4,7 @@
 	width: 100%;
 
 	.wc-block-product-categories-list-item {
-		display: flex;
+		// display: flex;
 		justify-content: space-between;
 		align-items: center;
 
@@ -22,6 +22,15 @@
 		}
 
 
+	}
+
+	.wc-block-product-categories-list-item-count {
+		float: right;
+	}
+
+
+	&--depth-1 {
+		padding-left: 20px;
 	}
 
 }

@@ -1,5 +1,7 @@
 'use strict';
 
+import './shop-main-toggle-filters';
+
 /**
  * zeever-animate
  */

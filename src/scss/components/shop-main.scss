@@ -1,0 +1,22 @@
+.shop-main {
+
+	.shop-main-toggle-filters {
+		display: none;
+	}
+
+	@media (max-width: 768px) {
+		.wp-container-core-columns-is-layout-1  {
+			flex-direction: column-reverse;
+		}
+
+		.shop-main-filters {
+			display: none;
+		}
+
+
+		.shop-main-toggle-filters {
+			display: block;
+		}
+
+	}
+}
