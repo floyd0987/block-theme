@@ -32,3 +32,7 @@ require_once get_template_directory() . '/inc/theme-functions.php';
 
 require_once get_template_directory() . '/inc/custom-icons/register-custom-icons.php';
 
+
+add_action('wp_footer', function() {
+	echo '<script>console.log("Footer test: Script loaded successfully.");</script>';
+});
