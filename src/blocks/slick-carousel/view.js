@@ -37,8 +37,8 @@ function mfnSliderContent( $ ) {
 	};
 
 	var slider = $( '.carousel.center' );
-	var count = 3;
-	var centerMode = true;
+	var count = 5;
+	var centerMode = false;
 	const rtl = false;
 	const autoplay = false;
 	const autoplaySpeed = 5000;
@@ -70,7 +70,7 @@ function mfnSliderContent( $ ) {
 		speed: 300,
 
 		centerMode: centerMode,
-		centerPadding: '10%',
+		centerPadding: '20%',
 
 
 		prevArrow:
