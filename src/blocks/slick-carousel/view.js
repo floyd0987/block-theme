@@ -37,7 +37,7 @@ function mfnSliderContent( $ ) {
 	};
 
 	var slider = $( '.carousel.center' );
-	var count = 1;
+	var count = 3;
 	var centerMode = true;
 	const rtl = false;
 	const autoplay = false;
@@ -70,7 +70,8 @@ function mfnSliderContent( $ ) {
 		speed: 300,
 
 		centerMode: centerMode,
-		centerPadding: '20%',
+		centerPadding: '10%',
+
 
 		prevArrow:
 			'<a class="button button_js slider_prev" href="#"><span class="button_icon"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L5 8l6 7" stroke="currentColor" fill="none" /></svg></span></a>',
@@ -87,6 +88,34 @@ function mfnSliderContent( $ ) {
 
 		slidesToShow: count,
 		slidesToScroll: count,
+
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: count >= 3 ? 3 : count,
+					slidesToScroll: count >= 3 ? 3 : count,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: count >= 2 ? 2 : count,
+					slidesToScroll: count >= 2 ? 2 : count,
+					// centerPadding: '10%',
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					centerPadding: '0',
+					dots: true,
+					arrows: false,
+				},
+			},
+		],
 	} );
 }
 
