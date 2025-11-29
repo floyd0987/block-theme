@@ -59,6 +59,16 @@
 					"color": "#ff6b00",
 					"name": "Orange Secondary",
 					"slug": "custom-orange-secondary"
+				},
+				{
+					"color": "#f8f9fa",
+					"name": "lighter gray",
+					"slug": "custom-lighter-gray"
+				},
+				{
+					"color": "#1a1a1a",
+					"name": "text color",
+					"slug": "custom-text-color"
 				}
 			]
 		},
@@ -439,7 +449,7 @@
 		"blocks": [],
 		"color": {
 			"background": "var(--wp--preset--color--zeever-bgsoft)",
-			"text": "#D0D0D0"
+			"text": "var(--wp--preset--color--zeever-primary)"
 		},
 		"elements": {
 			"button": {

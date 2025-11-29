@@ -7,47 +7,50 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-block-theme-categorie-progetti .categorie-progetti__list {
-  display: flex;
-  gap: 15px;
+.wp-block-block-theme-categorie-progetti .categorie-progetti__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .wp-block-block-theme-categorie-progetti .categorie-progetti__list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    gap: 10px;
-  }
 }
 .wp-block-block-theme-categorie-progetti .categorie-progetti__item {
-  border: 2px solid var(--wp--preset--color--zeever-secondary);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 18px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-@media (max-width: 768px) {
-  .wp-block-block-theme-categorie-progetti .categorie-progetti__item {
-    flex: 0 0 auto;
-  }
+.wp-block-block-theme-categorie-progetti .categorie-progetti__image-wrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  margin: 0;
+}
+.wp-block-block-theme-categorie-progetti .categorie-progetti__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.wp-block-block-theme-categorie-progetti .categorie-progetti__name {
+  /* margin-top: 1rem; */
+  text-align: center;
+  /* text-transform: uppercase; */
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 15px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .wp-block-block-theme-categorie-progetti .categorie-progetti__link {
   text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-}
-.wp-block-block-theme-categorie-progetti .categorie-progetti__link:hover {
-  color: var(--wp--preset--color--zeever-secondary);
-}
-.wp-block-block-theme-categorie-progetti .categorie-progetti__show-all {
-  display: block;
-  margin-top: 10px;
-  font-weight: 700;
+  color: inherit;
+  position: relative;
 }
