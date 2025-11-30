@@ -31,7 +31,8 @@ body.woocommerce-page {
 			color: var(--wp--preset--color--zeever-bgsoft);
 		}
 
-		.wc-block-components-button__text {
+		.wc-block-components-button__text,
+		.taxonomy-product_cat a {
 			color: var(--wp--preset--color--zeever-secondary);
 		}
 
