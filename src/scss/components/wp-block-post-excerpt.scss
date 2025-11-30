@@ -1,6 +1,6 @@
 .wp-block-post-excerpt {
 	&__more-link {
-		background: rgba(255, 255, 255, 0);
+		background: var(--wp--preset--color--zeever-bgsoft)!important;
 		border-style: solid;
 		border-width: 1px;
 		border-color: var(--wp--preset--color--zeever-secondary);
