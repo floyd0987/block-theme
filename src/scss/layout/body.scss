@@ -21,11 +21,24 @@ body {
 
 body.woocommerce-page {
 	background-color: var(--wp--preset--color--zeever-primary) !important;
-	color: var(--wp--preset--color--zeever-bgsoft);
-
-	.woocommerce-breadcrumb {
+	main, .shop-main, .wc-block-components-drawer {
+		color: var(--wp--preset--color--zeever-bgsoft);
 		a {
 			color: var(--wp--preset--color--zeever-bgsoft);
+		}
+
+		table {
+			color: var(--wp--preset--color--zeever-bgsoft);
+		}
+
+		.wc-block-components-button__text {
+			color: var(--wp--preset--color--zeever-secondary);
+		}
+
+		.woocommerce-breadcrumb {
+			a {
+				color: var(--wp--preset--color--zeever-bgsoft);
+			}
 		}
 	}
 }
