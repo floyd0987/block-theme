@@ -53,7 +53,7 @@ function custom_render_block_type( $block_content, $block ) {
 
         } else {
             // 3. Logica per tutti gli altri archivi (usa il nome dello slug)
-            $name = !empty($queried_object->name) ? sanitize_title($queried_object->name) : "blog";
+            $name = !empty($queried_object->name) ? sanitize_title($queried_object->name) : "default";
         }
 
 
