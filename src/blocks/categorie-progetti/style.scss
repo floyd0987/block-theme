@@ -48,17 +48,16 @@
 			// font-weight: bold;
 			/* text-transform: uppercase; */
 
-			background: rgba(0, 0, 0, .5);
-    bottom: 0;
-    color: #fff;
-    margin: 0;
-    overflow: hidden;
-    padding: 15px;
-    position: absolute;
-    text-align: center;
-    text-overflow: ellipsis; /* <-- This is active */
-    white-space: nowrap; /* <-- This is active */
-    width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			bottom: 0;
+			color: #fff;
+			margin: 0;
+			overflow: hidden;
+			padding: 15px;
+			position: absolute;
+			text-align: center;
+
+			width: 100%;
 		}
 
 		// Stili per il link
